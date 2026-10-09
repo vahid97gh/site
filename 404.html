@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, follow" />
+<title>Route not found | Vahid Ghasemi</title>
+<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&family=JetBrains+Mono:wght@500;700&display=swap');
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; height: 100%;
+    background: #0a0e14;
+    color: #e8edf4;
+    font-family: 'Vazirmatn', 'JetBrains Mono', sans-serif;
+  }
+  body {
+    display: flex; align-items: center; justify-content: center;
+    background-image:
+      linear-gradient(to right, rgba(70,196,224,0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(70,196,224,0.06) 1px, transparent 1px);
+    background-size: 42px 42px;
+    position: relative;
+    overflow: hidden;
+  }
+  body::before {
+    content: "";
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 50% at 50% 30%, rgba(70,196,224,0.16), transparent 65%);
+    pointer-events: none;
+  }
+  .card {
+    position: relative;
+    text-align: center;
+    padding: 3rem 2rem;
+    max-width: 480px;
+  }
+  .code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+    letter-spacing: 0.14em;
+    color: #46c4e0;
+    border: 1px solid rgba(70,196,224,0.3);
+    background: rgba(70,196,224,0.06);
+    border-radius: 999px;
+    padding: 6px 18px;
+    display: inline-block;
+    margin-bottom: 1.75rem;
+  }
+  h1 {
+    font-size: clamp(2.2rem, 6vw, 3.4rem);
+    font-weight: 800;
+    margin: 0 0 0.75rem;
+    background: linear-gradient(95deg, #8fe0f0, #46c4e0 55%, #7fe3bc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  p {
+    color: #97a4b6;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 0 0 2.25rem;
+  }
+  a.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #46c4e0;
+    color: #0a0e14;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 13px 26px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    box-shadow: 0 0 24px rgba(70,196,224,0.25);
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <span class="code">404</span>
+    <h1>Route not found.</h1>
+    <p>This address does not exist in the site routing table.</p>
+    <a class="btn" href="./">Back to network</a>
+  </div>
+</body>
+</html>
